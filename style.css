@@ -47,3 +47,28 @@ h2, h3, h4, h5, h6 {
     color: var(--color-rojo-brillante);
     text-align: center;
 }
+nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 0px;
+    background: var(--color-negro);
+    border-bottom: 2px solid var(--color-rojo-sangre);
+
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+nav a {
+    color: var(--color-crema);
+    text-decoration: none;
+    font-family: var(--fuente-titulos);
+    font-size: 1.5rem;
+    transition: color 0.3s;
+
+}
+nav a:hover {
+    color: var(--color-rojo-brillante);
+}
