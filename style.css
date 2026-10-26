@@ -1,0 +1,49 @@
+@font-face {
+    font-family: "FNAF";
+    src: url("fonts/five-nights-at-freddys.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: url("fonts/montserrat.bold.ttf") format("truetype");
+
+}
+:root {
+    --color-dorado-oscuro: #C89B4A;
+    --color-morado: #7D5BA6;
+    --color-rojo-apagado: #9E3B3B;
+    --color-amarillo: #D4AF37;
+    --color-morado-oscuro: #2A1035;
+
+    --color-negro: #0A0A0A;
+    --color-marron: #4A3020;
+    --color-rojo-brillante: #FF0000;
+    --color-rojo-sangre: #CC0000;
+    --color-naranja: #E85D04;
+    --color-rojo-rosado: #BC4749;
+
+    --color-crema: #FFF3B0;
+    --color-rosa: #E0AAB2;
+    --color-celeste: #A8DADC;
+
+    --fuente-titulos: "FNAF", Impact, sans-serif;
+    --fuente-texto: "Montserrat", Arial, sans-serif;
+}
+body{
+    font-family: FNAF;
+    background-image: url(img/Fondo.jpg);
+    font-family: var(--fuente-texto);
+}
+h1{
+    font-family: var(--fuente-titulos);
+    font-weight: normal;
+    color: var(--color-rojo-brillante);
+    text-align: center;
+    font-size: 5rem;
+}
+h2, h3, h4, h5, h6 {
+    font-family: var(--fuente-titulos);
+    font-weight: normal;
+    color: var(--color-rojo-brillante);
+    text-align: center;
+}
