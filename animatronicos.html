@@ -1,26 +1,216 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" data-bs-theme="dark">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página sobre Five Nights at Freddy's.</title>
+    <title>Animatrónicos | Five Nights at Freddy's</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <nav>
-                <a href="index.html">Inicio</a>
-                <a href="juegos.html">Juegos</a>
-                <a href="Animatronicos.html">Animatronicos</a>
-                <a href="Lore.html">Lore y datos curiosos</a>
-                <a href="Ranking.html">Ranking y comunidad</a>
+        <nav class="navbar navbar-expand-lg fixed-top navbar-fnaf" aria-label="Menú principal">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">FNAF</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Abrir menú">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="menu">
+                    <ul class="navbar-nav"><li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li><li class="nav-item"><a class="nav-link" href="juegos.html">Juegos</a></li><li class="nav-item"><a class="nav-link active" aria-current="page" href="animatronicos.html">Animatronicos</a></li><li class="nav-item"><a class="nav-link" href="lore.html">Lore y datos curiosos</a></li><li class="nav-item"><a class="nav-link" href="ranking.html">Ranking y comunidad</a></li></ul>
+                </div>
+            </div>
         </nav>
     </header>
     <main>
-        
+        <section class="container titulo-pagina text-center" data-aos="fade-down">
+            <h1>Animatronicos</h1><p class="lead">Ellos siempre están ahí. Filtra por juego.</p>
+        </section>
+        <section class="container mb-5" aria-label="Animatrónicos">
+            <div class="d-flex flex-wrap justify-content-center gap-2 mb-4" role="group" aria-label="Filtrar por juego"><button class="btn btn-fnaf active" data-filtro="todos">Todos</button><button class="btn btn-fnaf" data-filtro="fnaf1">FNAF 1</button><button class="btn btn-fnaf" data-filtro="fnaf2">FNAF 2</button><button class="btn btn-fnaf" data-filtro="fnaf3">FNAF 3</button><button class="btn btn-fnaf" data-filtro="fnaf4">FNAF 4</button><button class="btn btn-fnaf" data-filtro="sl">Sister Location</button><button class="btn btn-fnaf" data-filtro="sb">Security Breach</button></div>
+            <div class="row row-cols-2 row-cols-md-3 row-cols-lg-4 g-3"><div class="col" data-juego="fnaf1"><article class="card card-fnaf h-100">
+                <img src="img/FreddyFazbear-FNAF-1.webp" class="card-img-top img-icono" alt="Freddy Fazbear" loading="lazy">
+                <div class="card-body"><h3 class="h5 card-title">Freddy Fazbear</h3><p class="card-text small">Oso animatrónico y mascota de Freddy Fazbear's Pizza. De noche se mueve poco y se esconde en las sombras, pero es muy peligroso: cuando se acaba la energía, él es quien termina tu turno.</p></div>
+                <div class="card-footer"><small>FNAF 1</small></div></article></div><div class="col" data-juego="fnaf1"><article class="card card-fnaf h-100">
+                <img src="img/Bonnie-FNAF-1.webp" class="card-img-top img-icono" alt="Bonnie" loading="lazy">
+                <div class="card-body"><h3 class="h5 card-title">Bonnie</h3><p class="card-text small">Conejo morado que toca la guitarra en el escenario. En el juego es de los más agresivos: sale pronto del escenario y llega por la puerta izquierda, así que debes cerrarla a tiempo.</p></div>
+                <div class="card-footer"><small>FNAF 1</small></div></article></div><div class="col" data-juego="fnaf1"><article class="card card-fnaf h-100">
+                <img src="img/Chica-FNAF-1.webp" class="card-img-top img-icono" alt="Chica" loading="lazy">
+                <div class="card-body"><h3 class="h5 card-title">Chica</h3><p class="card-text small">Pollo amarillo con un babero que dice «Let's Eat!!!» y su cupcake. De noche ataca desde la puerta derecha; si la ves ahí, ciérrala antes de que entre a la oficina.</p></div>
+                <div class="card-footer"><small>FNAF 1</small></div></article></div><div class="col" data-juego="fnaf1"><article class="card card-fnaf h-100">
+                <img src="img/Foxy-FNAF-1.webp" class="card-img-top img-icono" alt="Foxy" loading="lazy">
+                <div class="card-body"><h3 class="h5 card-title">Foxy</h3><p class="card-text small">Zorro pirata que no está en el escenario, sino en su propio rincón, Pirate Cove, y está «fuera de servicio». Si lo vigilas con las cámaras se ralentiza; si lo descuidas, corre por el pasillo y ataca.</p></div>
+                <div class="card-footer"><small>FNAF 1</small></div></article></div><div class="col" data-juego="fnaf1"><article class="card card-fnaf h-100">
+                <img src="img/GoldenFreddy-FNAF-1.webp" class="card-img-top img-icono" alt="Golden Freddy" loading="lazy">
+                <div class="card-body"><h3 class="h5 card-title">Golden Freddy</h3><p class="card-text small">Versión dorada de Freddy y uno de los mayores misterios de la saga. Solo aparece si el póster del pasillo cambia al suyo y cierras el monitor justo después; no se sabe si es real o una alucinación.</p></div>
+                <div class="card-footer"><small>FNAF 1</small></div></article></div><div class="col" data-juego="fnaf1"><article class="card card-fnaf h-100">
+                <img src="img/Endo-01-FNAF-1.webp" class="card-img-top img-icono" alt="Endo-01" loading="lazy">
+                <div class="card-body"><h3 class="h5 card-title">Endo-01</h3><p class="card-text small">Endoesqueleto diseñado como esqueleto interno de los trajes de los cuatro animatrónicos originales. En el primer juego no ataca: solo se ve en el Backstage, junto a cabezas y otras piezas.</p></div>
+                <div class="card-footer"><small>FNAF 1</small></div></article></div><div class="col" data-juego="fnaf2"><article class="card card-fnaf h-100">
+                <img src="img/FNaF2_-_Freddy_Fazbear_Icono.webp" class="card-img-top img-icono" alt="Withered Freddy" loading="lazy">
+                <div class="card-body"><h3 class="h5 card-title">Withered Freddy</h3><p class="card-text small">Versión dañada del Freddy original, guardada en Parts/Service y una de las menos destrozadas. Como los demás, intenta llegar a la oficina; la máscara de Freddy engaña su sistema.</p></div>
+                <div class="card-footer"><small>FNAF 2</small></div></article></div><div class="col" data-juego="fnaf2"><article class="card card-fnaf h-100">
+                <img src="img/FNaF2_-_Bonnie_Icono.webp" class="card-img-top img-icono" alt="Withered Bonnie" loading="lazy">
+                <div class="card-body"><h3 class="h5 card-title">Withered Bonnie</h3><p class="card-text small">Muy deteriorado: sin cara ni brazo izquierdo, deja ver su cabeza de endoesqueleto. Es de los más activos del juego y se detiene si te pones la máscara a tiempo.</p></div>
+                <div class="card-footer"><small>FNAF 2</small></div></article></div><div class="col" data-juego="fnaf2"><article class="card card-fnaf h-100">
+                <img src="img/FNaF2_-_Chica_Icono.webp" class="card-img-top img-icono" alt="Withered Chica" loading="lazy">
+                <div class="card-body"><h3 class="h5 card-title">Withered Chica</h3><p class="card-text small">Junto con Bonnie, la más destrozada de Parts/Service. Casi solo se reconoce por su babero, su pico y sus patas. Si te pones la máscara cuando llega, se va.</p></div>
+                <div class="card-footer"><small>FNAF 2</small></div></article></div><div class="col" data-juego="fnaf2"><article class="card card-fnaf h-100">
+                <img src="img/FNaF2_-_Foxy_Icono.webp" class="card-img-top img-icono" alt="Withered Foxy" loading="lazy">
+                <div class="card-body"><h3 class="h5 card-title">Withered Foxy</h3><p class="card-text small">En peor estado que en el primer juego. Al salir de Parts/Service se queda frente a la oficina y la máscara no sirve contra él: hay que alumbrarlo con la linterna para reiniciarlo.</p></div>
+                <div class="card-footer"><small>FNAF 2</small></div></article></div><div class="col" data-juego="fnaf2"><article class="card card-fnaf h-100">
+                <img src="img/FNaF2_-_Golden_Freddy_Icono.webp" class="card-img-top img-icono" alt="Golden Freddy" loading="lazy">
+                <div class="card-body"><h3 class="h5 card-title">Golden Freddy</h3><p class="card-text small">En esta entrega no puedes cometer errores con él: si lo iluminas con la linterna, la noche termina con su ataque. Su origen es incierto y se cree que fue de los primeros personajes de la franquicia.</p></div>
+                <div class="card-footer"><small>FNAF 2</small></div></article></div><div class="col" data-juego="fnaf2"><article class="card card-fnaf h-100">
+                <img src="img/FNaF2_Toy_Freddy_Icono.webp" class="card-img-top img-icono" alt="Toy Freddy" loading="lazy">
+                <div class="card-body"><h3 class="h5 card-title">Toy Freddy</h3><p class="card-text small">Versión moderna y remasterizada de Freddy, con reconocimiento facial y movimiento más articulado. De día baja del escenario a convivir con los niños; de noche suele ser el último en moverse.</p></div>
+                <div class="card-footer"><small>FNAF 2</small></div></article></div><div class="col" data-juego="fnaf2"><article class="card card-fnaf h-100">
+                <img src="img/FNaF2_-_Toy_Bonnie_Icono.webp" class="card-img-top img-icono" alt="Toy Bonnie" loading="lazy">
+                <div class="card-body"><h3 class="h5 card-title">Toy Bonnie</h3><p class="card-text small">Homólogo moderno de Bonnie: más pequeño y de color más claro. Siempre es el primero en salir del escenario, incluso en la primera noche, y puede llegar pronto a tu oficina.</p></div>
+                <div class="card-footer"><small>FNAF 2</small></div></article></div><div class="col" data-juego="fnaf2"><article class="card card-fnaf h-100">
+                <img src="img/FNaF2_-_Toy_Chica_Icono.webp" class="card-img-top img-icono" alt="Toy Chica" loading="lazy">
+                <div class="card-body"><h3 class="h5 card-title">Toy Chica</h3><p class="card-text small">Versión Toy de Chica, más pequeña y de aspecto más femenino; su babero dice «Let's Party». Cuando sale del escenario desaparecen su pico y sus ojos, y deja ver su endoesqueleto.</p></div>
+                <div class="card-footer"><small>FNAF 2</small></div></article></div><div class="col" data-juego="fnaf2"><article class="card card-fnaf h-100">
+                <img src="img/FNaF2_-_Mangle_Icono.webp" class="card-img-top img-icono" alt="Mangle" loading="lazy">
+                <div class="card-body"><h3 class="h5 card-title">Mangle</h3><p class="card-text small">Antes llamada Toy Foxy. Se dice que funcionaba bien hasta que los niños la desarmaban y volvían a armar, de ahí su nombre (mutilada). Está destrozada pero se mueve, y una radiofrecuencia delata dónde está.</p></div>
+                <div class="card-footer"><small>FNAF 2</small></div></article></div><div class="col" data-juego="fnaf2"><article class="card card-fnaf h-100">
+                <img src="img/Balloon-Boy-Icono-FNAF2.webp" class="card-img-top img-icono" alt="Balloon Boy" loading="lazy">
+                <div class="card-body"><h3 class="h5 card-title">Balloon Boy</h3><p class="card-text small">Personaje nuevo del segundo juego que reparte globos en el Game Area. No te mata: entra a la oficina, se ríe y apaga la linterna y las luces, dejándote expuesto a los demás.</p></div>
+                <div class="card-footer"><small>FNAF 2</small></div></article></div><div class="col" data-juego="fnaf2"><article class="card card-fnaf h-100">
+                <img src="img/JJ-FNAF-2.webp" class="card-img-top img-icono" alt="JJ" loading="lazy">
+                <div class="card-body"><h3 class="h5 card-title">JJ</h3><p class="card-text small">También llamada Balloon Girl; es un recolor morado de Balloon Boy. En este juego aparece al azar bajo el escritorio y no hace daño. En Ultimate Custom Night sí se vuelve un obstáculo.</p></div>
+                <div class="card-footer"><small>FNAF 2</small></div></article></div><div class="col" data-juego="fnaf2"><article class="card card-fnaf h-100">
+                <img src="img/Puppet-FNAF-2.webp" class="card-img-top img-icono" alt="Puppet" loading="lazy">
+                <div class="card-body"><h3 class="h5 card-title">Puppet</h3><p class="card-text small">Marioneta nueva que regala premios a los niños desde una caja de música en la Prize Corner. Si no le das cuerda a la caja, sale y es imposible evitar su ataque. Se cree que tiene un pasado trágico.</p></div>
+                <div class="card-footer"><small>FNAF 2</small></div></article></div><div class="col" data-juego="fnaf2"><article class="card card-fnaf h-100">
+                <img src="img/Shadow_Freddy-FNAF-2.webp" class="card-img-top img-icono" alt="Shadow Freddy" loading="lazy">
+                <div class="card-body"><h3 class="h5 card-title">Shadow Freddy</h3><p class="card-text small">Alucinación rara que aparece en Parts/Service: un Freddy casi negro, de ojos blancos, desplomado en el suelo. Si lo miras demasiado, el juego se congela.</p></div>
+                <div class="card-footer"><small>FNAF 2</small></div></article></div><div class="col" data-juego="fnaf2"><article class="card card-fnaf h-100">
+                <img src="img/RWQFSFASXC-FNAF-2.webp" class="card-img-top img-icono" alt="RWQFSFASXC" loading="lazy">
+                <div class="card-body"><h3 class="h5 card-title">RWQFSFASXC</h3><p class="card-text small">También conocido como Shadow Bonnie. Era una extraña alucinación de FNaF 2 que cerraba el juego, y es protagonista de los minijuegos del final bueno de FNaF 3. Usa el modelo de Toy Bonnie, oscurecido.</p></div>
+                <div class="card-footer"><small>FNAF 2</small></div></article></div><div class="col" data-juego="fnaf2"><article class="card card-fnaf h-100">
+                <img src="img/Endo-02-FNAF-2.webp" class="card-img-top img-icono" alt="Endo-02" loading="lazy">
+                <div class="card-body"><h3 class="h5 card-title">Endo-02</h3><p class="card-text small">Endoesqueleto diseñado para los animatrónicos Withered y algunos Toy durante los años 80. Igual que Endo-01, no es un antagonista en el segundo juego.</p></div>
+                <div class="card-footer"><small>FNAF 2</small></div></article></div><div class="col" data-juego="fnaf3"><article class="card card-fnaf h-100">
+                <img src="img/Springtrap_FNAF-3.webp" class="card-img-top img-icono" alt="Springtrap" loading="lazy">
+                <div class="card-body"><h3 class="h5 card-title">Springtrap</h3><p class="card-text small">El único animatrónico real del tercer juego: un traje de conejo muy deteriorado, hallado 30 años después y puesto en Fazbear's Fright. Después se reveló que dentro estaba William Afton. Lo atrae el ruido.</p></div>
+                <div class="card-footer"><small>FNAF 3</small></div></article></div><div class="col" data-juego="fnaf3"><article class="card card-fnaf h-100">
+                <img src="img/PhantomFreddy_FNAF-3.webp" class="card-img-top img-icono" alt="Phantom Freddy" loading="lazy">
+                <div class="card-body"><h3 class="h5 card-title">Phantom Freddy</h3><p class="card-text small">Alucinación de un Freddy dañado, con cables saliendo de los ojos. Empieza a aparecer en la noche 3 por el pasillo; si lo miras mucho tiempo, te ataca.</p></div>
+                <div class="card-footer"><small>FNAF 3</small></div></article></div><div class="col" data-juego="fnaf3"><article class="card card-fnaf h-100">
+                <img src="img/PhantomBB-FNAF-3.webp" class="card-img-top img-icono" alt="Phantom Balloon Boy" loading="lazy">
+                <div class="card-body"><h3 class="h5 card-title">Phantom Balloon Boy</h3><p class="card-text small">La alucinación más activa, incluso desde la noche 2. Aparece casi en todas partes, salvo los ductos; si lo miras demasiado, entra a la oficina y te da un susto.</p></div>
+                <div class="card-footer"><small>FNAF 3</small></div></article></div><div class="col" data-juego="fnaf3"><article class="card card-fnaf h-100">
+                <img src="img/PhantomChica-FNAF-3.webp" class="card-img-top img-icono" alt="Phantom Chica" loading="lazy">
+                <div class="card-body"><h3 class="h5 card-title">Phantom Chica</h3><p class="card-text small">Alucinación de Chica que comienza en la noche 3. Aparece en la pantalla de la máquina arcade de la cámara 07 y hay que evitar mirarla por mucho tiempo.</p></div>
+                <div class="card-footer"><small>FNAF 3</small></div></article></div><div class="col" data-juego="fnaf3"><article class="card card-fnaf h-100">
+                <img src="img/PhantomFoxy-FNAF-3.webp" class="card-img-top img-icono" alt="Phantom Foxy" loading="lazy">
+                <div class="card-body"><h3 class="h5 card-title">Phantom Foxy</h3><p class="card-text small">Es Foxy con su modelo viejo de FNaF 2, sin la mitad del brazo derecho. Surge siempre en la esquina izquierda de la oficina y ataca en cuanto lo ves de frente.</p></div>
+                <div class="card-footer"><small>FNAF 3</small></div></article></div><div class="col" data-juego="fnaf3"><article class="card card-fnaf h-100">
+                <img src="img/Phantom-Mangle-FNAF-3.webp" class="card-img-top img-icono" alt="Phantom Mangle" loading="lazy">
+                <div class="card-body"><h3 class="h5 card-title">Phantom Mangle</h3><p class="card-text small">Versión fantasma de Mangle, activa desde la noche 2. Si la miras demasiado, su ruidosa radiofrecuencia provoca errores de audio en el juego.</p></div>
+                <div class="card-footer"><small>FNAF 3</small></div></article></div><div class="col" data-juego="fnaf3"><article class="card card-fnaf h-100">
+                <img src="img/PhantomPuppet-FNAF-3.webp" class="card-img-top img-icono" alt="Phantom Puppet" loading="lazy">
+                <div class="card-body"><h3 class="h5 card-title">Phantom Puppet</h3><p class="card-text small">Considerado el Phantom más peligroso. Tapa tu vista y no te deja usar las cámaras ni el panel de mantenimiento, dejándote expuesto a ataques como el de Springtrap.</p></div>
+                <div class="card-footer"><small>FNAF 3</small></div></article></div><div class="col" data-juego="fnaf4"><article class="card card-fnaf h-100">
+                <img src="img/NightmareFreddy-FNAF-4.webp" class="card-img-top img-icono" alt="Nightmare Freddy" loading="lazy">
+                <div class="card-body"><h3 class="h5 card-title">Nightmare Freddy</h3><p class="card-text small">Versión pesadilla de Freddy; actúa desde la primera noche. Tres Freddles pequeños aparecen sobre la cama: si no los ahuyentas con la linterna a tiempo, Nightmare Freddy te ataca.</p></div>
+                <div class="card-footer"><small>FNAF 4</small></div></article></div><div class="col" data-juego="fnaf4"><article class="card card-fnaf h-100">
+                <img src="img/NightmareBonnie-FNAF-4.webp" class="card-img-top img-icono" alt="Nightmare Bonnie" loading="lazy">
+                <div class="card-body"><h3 class="h5 card-title">Nightmare Bonnie</h3><p class="card-text small">Intenta entrar siempre por la izquierda y se anuncia con su respiración. Si lo iluminas en la puerta ataca, así que debes cerrarla cuando lo oigas.</p></div>
+                <div class="card-footer"><small>FNAF 4</small></div></article></div><div class="col" data-juego="fnaf4"><article class="card card-fnaf h-100">
+                <img src="img/NightmareChica-FNAF-4.webp" class="card-img-top img-icono" alt="Nightmare Chica" loading="lazy">
+                <div class="card-body"><h3 class="h5 card-title">Nightmare Chica</h3><p class="card-text small">Va siempre con su Cupcake, que también puede atacar. Se acerca por la derecha: si la alumbras en la puerta ataca, o manda a su cupcake a tu cuarto.</p></div>
+                <div class="card-footer"><small>FNAF 4</small></div></article></div><div class="col" data-juego="fnaf4"><article class="card card-fnaf h-100">
+                <img src="img/NightmareFoxy-FNAF-4.webp" class="card-img-top img-icono" alt="Nightmare Foxy" loading="lazy">
+                <div class="card-body"><h3 class="h5 card-title">Nightmare Foxy</h3><p class="card-text small">Con su garfio pirata, puede entrar al cuarto y esconderse en el armario. Si no lo cierras y le prestas atención, sale y te ataca.</p></div>
+                <div class="card-footer"><small>FNAF 4</small></div></article></div><div class="col" data-juego="fnaf4"><article class="card card-fnaf h-100">
+                <img src="img/NightmareFredbear-FNAF-4.webp" class="card-img-top img-icono" alt="Nightmare Fredbear" loading="lazy">
+                <div class="card-body"><h3 class="h5 card-title">Nightmare Fredbear</h3><p class="card-text small">Personaje nuevo, versión pesadilla de Fredbear. Empieza tarde, hacia la noche 5, y es muy rápido e impredecible: puede estar en los pasillos, la cama o el armario.</p></div>
+                <div class="card-footer"><small>FNAF 4</small></div></article></div><div class="col" data-juego="fnaf4"><article class="card card-fnaf h-100">
+                <img src="img/Nightmare-FNAF-4.webp" class="card-img-top img-icono" alt="Nightmare" loading="lazy">
+                <div class="card-body"><h3 class="h5 card-title">Nightmare</h3><p class="card-text small">Es Nightmare Fredbear en color negro y parcialmente transparente. Es aún más activo y peligroso; su actividad empieza en la noche 7.</p></div>
+                <div class="card-footer"><small>FNAF 4</small></div></article></div><div class="col" data-juego="fnaf4"><article class="card card-fnaf h-100">
+                <img src="img/Nightmarionne--FNAF-4.webp" class="card-img-top img-icono" alt="Nightmarionne" loading="lazy">
+                <div class="card-body"><h3 class="h5 card-title">Nightmarionne</h3><p class="card-text small">Agregado en la edición de Halloween, reemplaza a Nightmare. Versión de Puppet con brazos que parecen tentáculos; puede aparecer en pasillos, cama o armario.</p></div>
+                <div class="card-footer"><small>FNAF 4</small></div></article></div><div class="col" data-juego="fnaf4"><article class="card card-fnaf h-100">
+                <img src="img/Nightmare_BB--FNAF-4.webp" class="card-img-top img-icono" alt="Nightmare Balloon Boy" loading="lazy">
+                <div class="card-body"><h3 class="h5 card-title">Nightmare Balloon Boy</h3><p class="card-text small">Agregado en la edición de Halloween, reemplaza a Plushtrap. Tiene su propio minijuego, «Fun with Balloon Boy»: debes detenerlo sobre la X antes de que se pase.</p></div>
+                <div class="card-footer"><small>FNAF 4</small></div></article></div><div class="col" data-juego="fnaf4"><article class="card card-fnaf h-100">
+                <img src="img/Nightmare_Mangle--FNAF-4.webp" class="card-img-top img-icono" alt="Nightmare Mangle" loading="lazy">
+                <div class="card-body"><h3 class="h5 card-title">Nightmare Mangle</h3><p class="card-text small">Agregada en la edición de Halloween; reemplaza a Nightmare Foxy y se comporta igual: entra al armario y debes encerrarla hasta que desaparezca.</p></div>
+                <div class="card-footer"><small>FNAF 4</small></div></article></div><div class="col" data-juego="fnaf4"><article class="card card-fnaf h-100">
+                <img src="img/Jack-o-chica-FNAF-4.webp" class="card-img-top img-icono" alt="Jack-O-Chica" loading="lazy">
+                <div class="card-body"><h3 class="h5 card-title">Jack-O-Chica</h3><p class="card-text small">Variante de Halloween de Nightmare Chica: emana una luz naranja desde adentro, no tiene ojos y su cupcake fue cambiado por una calabaza.</p></div>
+                <div class="card-footer"><small>FNAF 4</small></div></article></div><div class="col" data-juego="fnaf4"><article class="card card-fnaf h-100">
+                <img src="img/Jack-oBonnie-FNAF-4.webp" class="card-img-top img-icono" alt="Jack-O-Bonnie" loading="lazy">
+                <div class="card-body"><h3 class="h5 card-title">Jack-O-Bonnie</h3><p class="card-text small">Variante de Halloween de Nightmare Bonnie, con luz naranja y sin ojos. Se mueve por el pasillo izquierdo y hay que cerrar la puerta. Es el único no canónico.</p></div>
+                <div class="card-footer"><small>FNAF 4</small></div></article></div><div class="col" data-juego="fnaf4"><article class="card card-fnaf h-100">
+                <img src="img/Plushtrap-FNAF-4.webp" class="card-img-top img-icono" alt="Plushtrap" loading="lazy">
+                <div class="card-body"><h3 class="h5 card-title">Plushtrap</h3><p class="card-text small">Peluche de Springtrap que puede moverse. Aparece solo en su minijuego «Fun with Plushtrap»: debes detenerlo justo en la X; si se pasa, ataca.</p></div>
+                <div class="card-footer"><small>FNAF 4</small></div></article></div><div class="col" data-juego="sl"><article class="card card-fnaf h-100">
+                <img src="img/Circus_Baby-FNAF-Sister-Location.webp" class="card-img-top img-icono" alt="Circus Baby" loading="lazy">
+                <div class="card-body"><h3 class="h5 card-title">Circus Baby</h3><p class="card-text small">Animatrónica con aspecto de payaso. Según la historia, durante una fiesta en Circus Baby's Pizza World una niña murió por su causa. Guía al técnico hasta la Scooping Room en la noche final.</p></div>
+                <div class="card-footer"><small>Sister Location</small></div></article></div><div class="col" data-juego="sl"><article class="card card-fnaf h-100">
+                <img src="img/Ballora-Sister-Location.webp" class="card-img-top img-icono" alt="Ballora" loading="lazy">
+                <div class="card-body"><h3 class="h5 card-title">Ballora</h3><p class="card-text small">Bailarina de aspecto humano que reacciona al sonido. En la noche 2 debes cruzar su galería despacio y detenerte cuando sube el volumen de su música.</p></div>
+                <div class="card-footer"><small>Sister Location</small></div></article></div><div class="col" data-juego="sl"><article class="card card-fnaf h-100">
+                <img src="img/Funtimefreddy-Sister-Location.webp" class="card-img-top img-icono" alt="Funtime Freddy" loading="lazy">
+                <div class="card-body"><h3 class="h5 card-title">Funtime Freddy</h3><p class="card-text small">Otra versión de Freddy; lleva a Bon-Bon, su marioneta de mano. En la Breaker Room se aleja con un audio, y en Parts/Service debes presionar botones para darle mantenimiento.</p></div>
+                <div class="card-footer"><small>Sister Location</small></div></article></div><div class="col" data-juego="sl"><article class="card card-fnaf h-100">
+                <img src="img/FuntimeFoxy-Sister-Location.webp" class="card-img-top img-icono" alt="Funtime Foxy" loading="lazy">
+                <div class="card-body"><h3 class="h5 card-title">Funtime Foxy</h3><p class="card-text small">Versión de Foxy que puede dividir su cara hasta en 6 partes. Se evita con el flash: cada vez que lo ves, debes dejar de avanzar un momento. En la noche 3 te captura.</p></div>
+                <div class="card-footer"><small>Sister Location</small></div></article></div><div class="col" data-juego="sl"><article class="card card-fnaf h-100">
+                <img src="img/Ennard-Sister-Location.webp" class="card-img-top img-icono" alt="Ennard" loading="lazy">
+                <div class="card-body"><h3 class="h5 card-title">Ennard</h3><p class="card-text small">Animatrónico secreto formado por los endoesqueletos de Circus Baby, Ballora, Funtime Freddy, Funtime Foxy y Bon-Bon. Al final usa el cuerpo del técnico como disfraz para escapar.</p></div>
+                <div class="card-footer"><small>Sister Location</small></div></article></div><div class="col" data-juego="sl"><article class="card card-fnaf h-100">
+                <img src="img/BidybabIcon-Sister-Location.webp" class="card-img-top img-icono" alt="Bidybab" loading="lazy">
+                <div class="card-body"><h3 class="h5 card-title">Bidybab</h3><p class="card-text small">Animatrónicos pequeños con aspecto de bebé de juguete. En la noche 2 debes evitarlos cerrando la lámina de metal que tienes enfrente.</p></div>
+                <div class="card-footer"><small>Sister Location</small></div></article></div><div class="col" data-juego="sl"><article class="card card-fnaf h-100">
+                <img src="img/Minireena-Sister-Location.webp" class="card-img-top img-icono" alt="Minireena" loading="lazy">
+                <div class="card-body"><h3 class="h5 card-title">Minireena</h3><p class="card-text small">Bailarinas diminutas, como maniquíes de madera con tutú lavanda. En la noche 4 suben al traje y aflojan los seguros; para frenarlas hay que sacudir el traje con cuidado.</p></div>
+                <div class="card-footer"><small>Sister Location</small></div></article></div><div class="col" data-juego="sb"><article class="card card-fnaf h-100">
+                <img src="img/Glam_Freddy_Icono-security-Breach.webp" class="card-img-top img-icono" alt="Glamrock Freddy" loading="lazy">
+                <div class="card-body"><h3 class="h5 card-title">Glamrock Freddy</h3><p class="card-text small">Versión glamrock de Freddy en el Mega Pizzaplex. En el juego acompaña y ayuda a Gregory, el protagonista, mientras explora el lugar.</p></div>
+                <div class="card-footer"><small>Security Breach</small></div></article></div><div class="col" data-juego="sb"><article class="card card-fnaf h-100">
+                <img src="img/Glam_Chica_Icono-security-Breach.webp" class="card-img-top img-icono" alt="Glamrock Chica" loading="lazy">
+                <div class="card-body"><h3 class="h5 card-title">Glamrock Chica</h3><p class="card-text small">Animatrónica de la banda glamrock del Mega Pizzaplex, junto a Freddy, Roxanne Wolf y Montgomery Gator.</p></div>
+                <div class="card-footer"><small>Security Breach</small></div></article></div><div class="col" data-juego="sb"><article class="card card-fnaf h-100">
+                <img src="img/Roxanne_Wolf_Icono-security-Breach.webp" class="card-img-top img-icono" alt="Roxanne Wolf" loading="lazy">
+                <div class="card-body"><h3 class="h5 card-title">Roxanne Wolf</h3><p class="card-text small">Loba de la banda glamrock del Mega Pizzaplex, junto a Freddy, Chica y Montgomery Gator.</p></div>
+                <div class="card-footer"><small>Security Breach</small></div></article></div><div class="col" data-juego="sb"><article class="card card-fnaf h-100">
+                <img src="img/Montgomery_Gator_Icono-security-Breach.webp" class="card-img-top img-icono" alt="Montgomery Gator" loading="lazy">
+                <div class="card-body"><h3 class="h5 card-title">Montgomery Gator</h3><p class="card-text small">Cocodrilo de la banda glamrock del Mega Pizzaplex, junto a Freddy, Chica y Roxanne Wolf.</p></div>
+                <div class="card-footer"><small>Security Breach</small></div></article></div><div class="col" data-juego="sb"><article class="card card-fnaf h-100">
+                <img src="img/Sol_Icono-security-Breach.webp" class="card-img-top img-icono" alt="Sol" loading="lazy">
+                <div class="card-body"><h3 class="h5 card-title">Sol</h3><p class="card-text small">Cuidador de la guardería del Mega Pizzaplex en su modo de día; su otra mitad es Luna.</p></div>
+                <div class="card-footer"><small>Security Breach</small></div></article></div><div class="col" data-juego="sb"><article class="card card-fnaf h-100">
+                <img src="img/Luna_Icono-security-Breach.webp" class="card-img-top img-icono" alt="Luna" loading="lazy">
+                <div class="card-body"><h3 class="h5 card-title">Luna</h3><p class="card-text small">Cuidador de la guardería del Mega Pizzaplex en su modo de noche; su otra mitad es Sol.</p></div>
+                <div class="card-footer"><small>Security Breach</small></div></article></div><div class="col" data-juego="sb"><article class="card card-fnaf h-100">
+                <img src="img/DJMM_ico-security-Breach.webp" class="card-img-top img-icono" alt="DJ Music Man" loading="lazy">
+                <div class="card-body"><h3 class="h5 card-title">DJ Music Man</h3><p class="card-text small">Animatrónico DJ del Mega Pizzaplex, versión de Music Man.</p></div>
+                <div class="card-footer"><small>Security Breach</small></div></article></div><div class="col" data-juego="sb"><article class="card card-fnaf h-100">
+                <img src="img/Wind-Up_MM_ico-security-Breach.webp" class="card-img-top img-icono" alt="Wind-Up Music Man" loading="lazy">
+                <div class="card-body"><h3 class="h5 card-title">Wind-Up Music Man</h3><p class="card-text small">Versión de cuerda de Music Man, otro animatrónico del Mega Pizzaplex.</p></div>
+                <div class="card-footer"><small>Security Breach</small></div></article></div></div>
+        </section>
     </main>
-    <footer>
-        
+    <footer class="text-center py-4">
+        <div class="franja" aria-hidden="true"></div>
+        <p class="mt-3 mb-1">Sitio de fans sin fines de lucro. Five Nights at Freddy's pertenece a sus creadores.</p>
+        <p class="mb-0">
+            <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+            <a href="#" aria-label="X"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" aria-label="Discord"><i class="fa-brands fa-discord"></i></a>
+        </p>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.14.5/dist/sweetalert2.all.min.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
