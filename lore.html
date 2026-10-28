@@ -1,26 +1,69 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" data-bs-theme="dark">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página sobre Five Nights at Freddy's.</title>
+    <title>Lore y datos curiosos | Five Nights at Freddy's</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <nav>
-                <a href="index.html">Inicio</a>
-                <a href="juegos.html">Juegos</a>
-                <a href="Animatronicos.html">Animatronicos</a>
-                <a href="Lore.html">Lore y datos curiosos</a>
-                <a href="Ranking.html">Ranking y comunidad</a>
+        <nav class="navbar navbar-expand-lg fixed-top navbar-fnaf" aria-label="Menú principal">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">FNAF</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Abrir menú">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="menu">
+                    <ul class="navbar-nav"><li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li><li class="nav-item"><a class="nav-link" href="juegos.html">Juegos</a></li><li class="nav-item"><a class="nav-link" href="animatronicos.html">Animatronicos</a></li><li class="nav-item"><a class="nav-link active" aria-current="page" href="lore.html">Lore y datos curiosos</a></li><li class="nav-item"><a class="nav-link" href="ranking.html">Ranking y comunidad</a></li></ul>
+                </div>
+            </div>
         </nav>
     </header>
     <main>
-        
+        <section class="container titulo-pagina text-center" data-aos="fade-down">
+            <h1>Lore y datos curiosos</h1><p class="lead">Cada juego es una pieza del rompecabezas.</p>
+        </section>
+        <section class="container mb-5" aria-labelledby="t-linea">
+            <h2 id="t-linea" class="mb-3">Linea de tiempo de lanzamientos</h2>
+            <ol class="row row-cols-2 row-cols-md-3 row-cols-lg-6 g-3 list-unstyled"><li class="col"><div class="hito"><img src="img/five-nights-at-freddys-juego-portada.jpg" alt="Portada de Five Nights at Freddy's" loading="lazy"><strong class="titulo-font">2014</strong><p class="small mb-0">Five Nights at Freddy's</p></div></li><li class="col"><div class="hito"><img src="img/five-nights-at-freddys-2-juego-portada.jpg" alt="Portada de Five Nights at Freddy's 2" loading="lazy"><strong class="titulo-font">2014</strong><p class="small mb-0">Five Nights at Freddy's 2</p></div></li><li class="col"><div class="hito"><img src="img/five-nights-at-freddys-3-juego-portada.jpg" alt="Portada de Five Nights at Freddy's 3" loading="lazy"><strong class="titulo-font">2015</strong><p class="small mb-0">Five Nights at Freddy's 3</p></div></li><li class="col"><div class="hito"><img src="img/five-nights-at-freddys-4-juego-portada.jpg" alt="Portada de Five Nights at Freddy's 4" loading="lazy"><strong class="titulo-font">2015</strong><p class="small mb-0">Five Nights at Freddy's 4</p></div></li><li class="col"><div class="hito"><img src="img/five-nights-at-freddys-sister-location-juego-portada.jpg" alt="Portada de Sister Location" loading="lazy"><strong class="titulo-font">2016</strong><p class="small mb-0">Sister Location</p></div></li><li class="col"><div class="hito"><img src="img/five-nights-at-freddys-security-breach-juego-portada.jpg" alt="Portada de Security Breach" loading="lazy"><strong class="titulo-font">2021</strong><p class="small mb-0">Security Breach</p></div></li></ol>
+        </section>
+        <section class="container mb-5" aria-labelledby="t-info">
+            <h2 id="t-info" class="mb-3">Informacion adicional</h2>
+            <div class="accordion" id="info"><div class="accordion-item"><h3 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#a0" aria-expanded="false">Quien es William Afton?</button></h3>
+                <div id="a0" class="accordion-collapse collapse" data-bs-parent="#info"><div class="accordion-body">Es el Hombre Morado, responsable del Incidente de los Niños Desaparecidos. Murió dentro del traje de Spring Bonnie, que luego se conoció como Springtrap.</div></div></div><div class="accordion-item"><h3 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#a1" aria-expanded="false">Que es el Puppet?</button></h3>
+                <div id="a1" class="accordion-collapse collapse" data-bs-parent="#info"><div class="accordion-body">Es un animatrónico que vive en una caja de música. Según la historia, sería la primera víctima de Afton y quien dio vida a los animatrónicos con las almas de los niños.</div></div></div><div class="accordion-item"><h3 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#a2" aria-expanded="false">Que paso en Fazbear's Fright?</button></h3>
+                <div id="a2" class="accordion-collapse collapse" data-bs-parent="#info"><div class="accordion-body">Era una atracción de terror basada en la pizzería. Allí se encontró a Springtrap, y un incendio destruyó el lugar.</div></div></div><div class="accordion-item"><h3 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#a3" aria-expanded="false">Que ocurre en Sister Location?</button></h3>
+                <div id="a3" class="accordion-collapse collapse" data-bs-parent="#info"><div class="accordion-body">Circus Baby's Pizza World alquilaba animatrónicos para fiestas. Ennard, formado por varios endoesqueletos, escapa usando el cuerpo de un técnico.</div></div></div></div>
+        </section>
+        <section class="container mb-5" aria-labelledby="t-teo">
+            <h2 id="t-teo" class="mb-3">Teorias y secretos</h2>
+            <div class="row row-cols-1 row-cols-md-3 g-4"><div class="col" data-aos="fade-up"><article class="card card-fnaf h-100 text-center"><div class="card-body">
+                <i class="fa-solid fa-circle-question fa-2x mb-2"></i><h3 class="h5">Teorias de fans</h3>
+                <button class="btn btn-fnaf btn-info-extra" data-titulo="Teorías de fans" data-texto="Gran parte de la historia se basa en teorías construidas con los minijuegos y los mensajes del Phone Guy; Scott Cawthon no ha confirmado muchos detalles.">Ver más</button></div></article></div><div class="col" data-aos="fade-up"><article class="card card-fnaf h-100 text-center"><div class="card-body">
+                <i class="fa-solid fa-lock fa-2x mb-2"></i><h3 class="h5">Secretos ocultos</h3>
+                <button class="btn btn-fnaf btn-info-extra" data-titulo="Secretos ocultos" data-texto="Los minijuegos de estilo retro y los finales alternativos esconden pistas clave sobre el pasado de la pizzería.">Ver más</button></div></article></div><div class="col" data-aos="fade-up"><article class="card card-fnaf h-100 text-center"><div class="card-body">
+                <i class="fa-solid fa-skull fa-2x mb-2"></i><h3 class="h5">Datos curiosos</h3>
+                <button class="btn btn-fnaf btn-info-extra" data-titulo="Datos curiosos" data-texto="Scott Cawthon confirmó que los nombres de los animatrónicos originales eran nombres beta; se encariñó con ellos y los dejó.">Ver más</button></div></article></div></div>
+        </section>
     </main>
-    <footer>
-        
+    <footer class="text-center py-4">
+        <div class="franja" aria-hidden="true"></div>
+        <p class="mt-3 mb-1">Sitio de fans sin fines de lucro. Five Nights at Freddy's pertenece a sus creadores.</p>
+        <p class="mb-0">
+            <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+            <a href="#" aria-label="X"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" aria-label="Discord"><i class="fa-brands fa-discord"></i></a>
+        </p>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.14.5/dist/sweetalert2.all.min.js"></script>
+    <script src="script.js"></script>
 </body>
-</html>
+</html> 
